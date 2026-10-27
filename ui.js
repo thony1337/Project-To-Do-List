@@ -30,3 +30,10 @@ cardDiv.appendChild(taskDate)
 cardDiv.appendChild(taskPriority)
 cardContainer.appendChild(cardDiv)
 }
+export function renderCards() {
+  cardContainer.textContent = ''
+  const tasks = getTasks()
+  for (const task of tasks) {
+    addCard(task)
+  }
+}
