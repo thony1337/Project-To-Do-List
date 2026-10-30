@@ -1,0 +1,6 @@
+.containerWrapper {
+    display:flex;
+}
+.done {
+    background-color: gray;
+}

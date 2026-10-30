@@ -1,5 +1,6 @@
-import { updateTaskDone, getTasks, storeTask } from './storage.js'
-import { newTask } from './data.js'
+import { updateTaskDone, getTasks, storeTask } from './storage.js';
+import { newTask } from './data.js';
+import './styles.css';
 
 const cardContainer = document.createElement('div')
 
