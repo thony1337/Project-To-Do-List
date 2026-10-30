@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/thony1337/Project-To-Do-List#readme",
   "devDependencies": {
+    "css-loader": "^7.1.5",
+    "style-loader": "^4.0.0",
     "webpack": "^5.112.2",
     "webpack-cli": "^7.2.3"
   }
