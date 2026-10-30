@@ -2,7 +2,7 @@ import { updateTaskDone, getTasks, storeTask } from './storage.js'
 import { newTask } from './data.js'
 
 const cardContainer = document.createElement('div')
-document.body.appendChild(cardContainer)
+
 
 export function addCard(task) {
   const cardDiv = document.createElement('div')
@@ -42,7 +42,7 @@ export function renderCards() {
 }
 
 const nav = document.createElement('nav')
-document.body.appendChild(nav)
+
 
 const navNewTaskButton = document.createElement('button')
 navNewTaskButton.textContent = 'New Task'
@@ -89,3 +89,9 @@ submitTaskButton.addEventListener('click', () => {
   dateInput.value = ''
   priority.value = 'low'
 })
+
+const containerWrapper = document.createElement('div');
+containerWrapper.classList.add("containerWrapper");
+containerWrapper.appendChild(nav);
+containerWrapper.appendChild(cardContainer);
+document.body.appendChild(containerWrapper);
